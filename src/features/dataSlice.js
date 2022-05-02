@@ -6,7 +6,7 @@ export const fetchAsyncLogin = createAsyncThunk(
   async (code) => {
     let data;
 
-    await fetch(`https://githuub.herokuapp.com/authenticate`, {
+    await fetch(`http://localhost:20219/authenticate`, {
       method: "POST",
       body: JSON.stringify({ code: code }),
     })

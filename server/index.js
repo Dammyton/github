@@ -54,6 +54,5 @@ app.post("/authenticate", (req, res) => {
 
 app.get("/", (req, res) => {});
 
-const HOST = "0.0.0.0";
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, HOST, () => console.log(`Listening on ${PORT}`));
+const PORT = process.env.SERVER_PORT || 20219;
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
